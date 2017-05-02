@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 for i in range(9):
         first = i
-        while first < 9:
+        while first < 10:
             if i == first:
                 first += 1
                 continue
-            print("{:d}{:d}, ".format(i, first), end='')
+            if i < 8:
+                print("{:d}{:d}, ".format(i, first), end='')
+            else:
+                print("{:d}{:d}".format(i, first))
             first += 1
-print("89")
