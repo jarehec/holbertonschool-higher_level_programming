@@ -73,6 +73,7 @@ guillaume@ubuntu:~/py/0x00$
 guillaume@ubuntu:~/py/0x00$ ./9-easter_egg.py
 ```
 100-write - Prints "and that piece of art is useful - Dora Korpar, 2015-10-19" to stderr using write
+```
 guillaume@ubuntu:~/py/0x00$ ./100-write.py
 and that piece of art is useful - Dora Korpar, 2015-10-19
 guillaume@ubuntu:~/py/0x00$ echo $?
