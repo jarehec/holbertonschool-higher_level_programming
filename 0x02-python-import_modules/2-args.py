@@ -5,7 +5,7 @@ if __name__ == '__main__':
     s = "argument"
     if ac < 1:
         print("{:d} {:s}.".format(ac, s))
-    if ac > 0:
+    elif ac > 0:
         if ac > 2:
             s += 's'
         print("{:d} {:s}:".format(ac, s))
