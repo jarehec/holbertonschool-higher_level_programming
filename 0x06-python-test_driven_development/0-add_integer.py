@@ -10,8 +10,8 @@ def add_integer(a, b):
     """
     add_integer
     """
-    if type(a) != int and type(a) != float and isinstance(a, int) is not True:
+    if isinstance(a, float) is not True and isinstance(a, int) is not True:
         raise TypeError("a must be an integer")
-    if type(b) != int and type(b) != float and isinstance(b, int) is not True:
+    if isinstance(b, float) is not True and isinstance(b, int) is not True:
         raise TypeError("b must be an integer")
     return (int(a) + int(b))
