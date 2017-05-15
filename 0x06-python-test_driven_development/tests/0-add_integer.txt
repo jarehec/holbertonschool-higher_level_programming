@@ -1,0 +1,28 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(6, 3)
+9
+>>> add_integer(101, -3)
+98
+>>> add_integer(10.0, -3)
+7
+>>> add_integer(8.5, -3)
+5
+>>> add_integer(8.0, 5)
+13
+>>> add_integer('holberton', 98)
+Traceback (most recent call last):
+		  ...
+TypeError: a must be an integer
+>>> add_integer(42, 'while')
+Traceback (most recent call last):
+		  ...
+TypeError: b must be an integer
+>>> add_integer('hello', 'world')
+Traceback (most recent call last):
+		...
+TypeError: a must be an integer
+>>> add_integer(True, 1)
+2
+>>> add_integer(True, False)
+1
