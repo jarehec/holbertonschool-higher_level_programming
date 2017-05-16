@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-"""
- add_integer - Returns the sum of two numbers
- @a: int or float
- @b: int or float
+""" Module to get the sum of two numbers
 """
 
 
 def add_integer(a, b):
-    """
-    add_integer
+    """Function to sum two numbers
+        @a: int or float
+        @b: int or float
     """
     if isinstance(a, float) is not True and isinstance(a, int) is not True:
         raise TypeError("a must be an integer")
