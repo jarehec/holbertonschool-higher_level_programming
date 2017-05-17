@@ -22,5 +22,20 @@ The checker is down!
 
 >>> text_indentation("Hello.     World")
 Hello.
-
+<BLANKLINE>
 World
+
+<BLANKLINE>
+>>> text_indentation('Holberton.School')
+Holberton.
+<BLANKLINE>
+School
+
+>>> text_indentation('Holberton. School? How are you: John')
+Holberton.
+<BLANKLINE>
+School?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+John
