@@ -25,6 +25,16 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(test)
         self.assertEqual(result, 99999999999999999999999)
 
+    def test_max_integer_end(self):
+        test = ([1, 99999999999999999999999])
+        result = max_integer(test)
+        self.assertEqual(result, 1)
+
+    def test_max_integer_tup(self):
+        test = max_integer([(1, 1), (99, 99)])
+        result = max_integer(test)
+        self.assertEqual(result, 1)
+
     def test_str_in_test(self):
         test = ['hi', 53, -70]
         with self.assertRaises(TypeError):

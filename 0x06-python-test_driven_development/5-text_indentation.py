@@ -9,11 +9,11 @@ def text_indentation(text):
     """
     if isinstance(text, str) is not True:
         raise TypeError("text must be a string")
-    c = 0
-    while c < len(text):
-        print("{:s}".format(text[c]), end='')
-        if text[c] == '.' or text[c] == ':' or text[c] == '?':
-            print("\n")
-            if c + 1 < len(text):
-                c += 1
-        c += 1
+    n_str = text.split()
+    n_str = " ".join(n_str)
+    n_str = n_str.replace(".", ".\n\n")
+    n_str = n_str.replace(":", ":\n\n")
+    n_str = n_str.replace("?", "?\n\n")
+    n_str = n_str.replace("\n ", "\n")
+    #    if i == ',' or i == ':' or i == '?':
+    print(n_str, end='')
