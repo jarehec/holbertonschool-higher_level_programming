@@ -20,3 +20,7 @@ TypeError: text must be a string
 >>> text_indentation("The checker is down!")
 The checker is down!
 
+>>> text_indentation("Hello.     World")
+Hello.
+
+World

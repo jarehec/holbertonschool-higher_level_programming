@@ -15,13 +15,28 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(test)
         self.assertEqual(result, 53)
 
+    def test_neg_integer(self):
+        test = [-43]
+        result = max_integer(test)
+        self.assertEqual(result, -43)
+
+    def test_max_integer(self):
+        test = ([99999999999999999999999, 1])
+        result = max_integer(test)
+        self.assertEqual(result, 99999999999999999999999)
+
     def test_str_in_test(self):
         test = ['hi', 53, -70]
         with self.assertRaises(TypeError):
             result = max_integer(test)
 
     def test_empty(self):
-        test = []
+        test = ()
+        result = max_integer(test)
+        self.assertEqual(result, None)
+
+    def test_empty_list(self):
+        test = ([])
         result = max_integer(test)
         self.assertEqual(result, None)
 
@@ -31,6 +46,11 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(result, True)
 
     def test_None(self):
+        test = [None, None]
+        with self.assertRaises(TypeError):
+            result = max_integer(test)
+
+    def test_too(self):
         test = [None, None]
         with self.assertRaises(TypeError):
             result = max_integer(test)
