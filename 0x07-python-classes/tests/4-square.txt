@@ -1,0 +1,32 @@
+>>> Square = __import__('4-square').Square
+
+""" Regular test """
+>>> my_square = Square(89)
+>>> my_square.area()
+7921
+>>> my_square.size
+89
+
+""" Multiple Arg Test """
+>>> my_square = Square(1, 2)
+Traceback (most recent call last):
+	...
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+
+""" Negative Test """
+>>> my_square = Square(-2)
+Traceback (most recent call last):
+	...
+ValueError: size must be >= 0
+
+""" None Test """
+>>> my_square = Square(None)
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
+
+""" String Test """
+>>> my_square = Square("yo")
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
