@@ -42,3 +42,10 @@ TypeError: size must be an integer
 Traceback (most recent call last):
 	...
 TypeError: size must be an integer
+
+""" Empty Test """
+>>> my_square = Square()
+>>> my_square.area()
+0
+>>> my_square.size
+0
