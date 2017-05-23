@@ -30,3 +30,15 @@ TypeError: size must be an integer
 Traceback (most recent call last):
 	...
 TypeError: size must be an integer
+
+""" Float Test """
+>>> my_square = Square(3.2)
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
+
+""" List Test """
+>>> my_square = Square([46, 87, 98])
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
