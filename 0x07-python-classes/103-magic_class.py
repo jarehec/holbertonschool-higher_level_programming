@@ -2,10 +2,9 @@
 """Module for magic"""
 import math
 
-
 class MagicClass:
     'magic class'
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         'initialization'
         self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
