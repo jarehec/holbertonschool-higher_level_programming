@@ -90,3 +90,8 @@ AttributeError: 'tuple' object has no attribute 'size'
 Traceback (most recent call last):
 	...
 AttributeError: 'tuple' object has no attribute 'size'
+
+>>> my_square.size = True
+Traceback (most recent call last):
+	...
+AttributeError: 'tuple' object has no attribute 'size'
