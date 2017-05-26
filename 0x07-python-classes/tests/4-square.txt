@@ -59,7 +59,7 @@ TypeError: size must be an integer
 1
 
 """ Boolean Test """
->>> my_square = Square(True)
+>>> my_square = Square(9 == 9)
 >>> my_square.area()
 1
 >>> my_square.size
