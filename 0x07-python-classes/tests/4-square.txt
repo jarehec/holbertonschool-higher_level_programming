@@ -63,6 +63,11 @@ TypeError: size must be an integer
 >>> my_square.area()
 1
 
+>>> my_square = Square(bool)
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
+
 Setter Tests
 -----------------------------------------------------------
 >>> my_square = (2, 3)
