@@ -62,7 +62,8 @@ TypeError: size must be an integer
 >>> my_square = Square(True)
 >>> my_square.area()
 1
-
+>>> my_square.size
+1
 >>> my_square = Square(bool)
 Traceback (most recent call last):
 	...
