@@ -4,6 +4,7 @@
 ### Function that prints all integers if a list
 <p>Prototype: def print_list_integer(my_list=[]):</p>
 <p>Format: one integer per line. See below</p>
+
 ```
 >>> print_list_integer = __import__('0-print_list_integer').print_list_integer
 >>> my_list = [1, 2, 3]
