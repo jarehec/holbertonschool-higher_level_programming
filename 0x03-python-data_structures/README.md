@@ -17,6 +17,7 @@
 ### Function that retrieves an element from a list
 <p>Prototype: def element_at(my_list, idx):</p>
 <p>If idx is out of range, the function should return None</p>
+
 ```
 >>> element_at = __import__('1-element_at').element_at
 >>> my_list = [1, 2, 3]
@@ -29,6 +30,7 @@ Element at index 1 is 2
 ### Function that replaces an element of a list at a specific position
 <p>Prototype: def replace_in_list(my_list, idx, element):</p>
 <p>If idx is out of range, the function should not modify anything, and returns the original list</p>
+
 ```
 >>> replace_in_list = __import__('2-replace_in_list').replace_in_list
 >>> my_list = [1, 2, 3, 4, 5]
@@ -45,6 +47,7 @@ Element at index 1 is 2
 ### Function that prints all integers if a list, in reverse order
 <p>Prototype: def print_reversed_list_integer(my_list=[]):</p>
 <p>Format: one integer per line. See below</p>
+
 ```
 >>> print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
 
@@ -61,6 +64,7 @@ Element at index 1 is 2
 ### Function that replaces an element in a list at a specific position without modifying the original list
 <p>Prototype: def print_list_integer(my_list=[]):</p>
 <p>Format: one integer per line. See below</p>
+
 ```
 >>> my_list = [1, 2, 3]
 >>> print_list_integer(my_list)
@@ -73,6 +77,7 @@ Element at index 1 is 2
 ### Function that removes all characters c and C from a string
 <p>Prototype: def no_c(my_string):</p>
 <p>The function shoud return the new string</p>
+
 ```
 >>> no_c = __import__('5-no_c').no_c
 >>> print(no_c("Holberton School"))
@@ -87,6 +92,7 @@ hiago
 ### Function that prints a matrix of integers 
 <p>Prototype: def print_matrix_integer(matrix=[[]]):</p>
 <p>Format: See below</p>
+
 ```
 >>> print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
 >>> matrix = [
@@ -108,6 +114,7 @@ hiago
 ### Function that adds 2 tuples
 <p>Prototype: def add_tuple(tuple_a=(), tuple_b=()):</p>
 <p>Returns a tuple with 2 integers:</p>
+
 ```
 >>> add_tuple = __import__('7-add_tuple').add_tuple
 >>> tuple_a = (1, 89)
@@ -125,6 +132,7 @@ hiago
 ### Function that returns a tuple with the length of a string and its first character
 <p>Prototype: def multiple_returns(sentence):</p>
 <p>If the sentence is empty, the first character should be equal to None</p>
+
 ```
 >>> multiple_returns = __import__('8-multiple_returns').multiple_returns
 >>> sentence = "At Holberton school, I learnt C!"
@@ -137,6 +145,7 @@ Length: 32 - First character: A
 ### Function that finds the biggest integer of a list
 <p>Prototype: def max_integer(my_list=[]):</p>
 <p>If the list is empty, returns None:</p>
+
 ```
 >>> max_integer = __import__('9-max_integer').max_integer
 >>> my_list = [1, 90, 2, 13, 34, 5, -13, 3]
@@ -149,6 +158,7 @@ Max: 90
 ### Function that finds all multiples of 2 in a list
 <p>Prototype: def divisible_by_2(my_list=[]):</p>
 <p>Return a new list with True or False, depending on wether the integer at the same position in the original list is a multiple of 2</p>
+
 ```
 >>> divisible_by_2 = __import__('10-divisible_by_2').divisible_by_2
 
@@ -169,6 +179,7 @@ Max: 90
 ## 11-delete_at.py
 ### Function that deletes the item at a specific position in a list 
 <p>Prototype: def delete_at(my_list=[], idx=0):</p>
+
 ```
 >>> delete_at = __import__('11-delete_at').delete_at
 
