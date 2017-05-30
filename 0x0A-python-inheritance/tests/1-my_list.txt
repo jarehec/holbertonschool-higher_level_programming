@@ -1,0 +1,79 @@
+""" Import class """
+>>> MyList = __import__('1-my_list').MyList
+
+Regular Tests
+------------------------------
+""" Empty Test """
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> print(my_list)
+[1]
+
+""" String Test """
+>>> my_list = MyList("hi")
+>>> my_list
+['h', 'i']
+
+""" Dict Test """
+>>> my_list = MyList({'key':'val'})
+>>> my_list
+['key']
+
+""" Set Test """
+>>> my_list = MyList({'3', '4', '5'})
+
+""" Tuple Test """
+>>> my_list = MyList((10, 45))
+>>> my_list
+[10, 45]
+
+""" Print Sorted Test """
+>>> my_list = MyList(range(5))
+>>> my_list.append(-3)
+>>> my_list.print_sorted()
+[-3, 0, 1, 2, 3, 4]
+
+
+Failure Tests
+---------------------------
+""" Int Test """
+>>> my_list = MyList(2)
+Traceback (most recent call last):
+	...
+TypeError: 'int' object is not iterable
+
+""" Negative Int Test """
+>>> my_list = MyList(-2)
+Traceback (most recent call last):
+	...
+TypeError: 'int' object is not iterable
+
+""" Float Test """
+>>> my_list = MyList(3.14)
+Traceback (most recent call last):
+	...
+TypeError: 'float' object is not iterable
+
+""" Bool Test """
+>>> my_list = MyList(True)
+Traceback (most recent call last):
+	...
+TypeError: 'bool' object is not iterable
+
+""" Multiple Arg Test """
+>>> my_list = MyList(3, 4)
+Traceback (most recent call last):
+	...
+TypeError: list() takes at most 1 argument (2 given)
+
+""" None Test """
+>>> my_list = MyList(None)
+Traceback (most recent call last):
+	...
+TypeError: 'NoneType' object is not iterable
+
+""" Print Sorted Args """
+>>> my_list.print_sorted("hi")
+Traceback (most recent call last):
+	...
+TypeError: print_sorted() takes 1 positional argument but 2 were given
