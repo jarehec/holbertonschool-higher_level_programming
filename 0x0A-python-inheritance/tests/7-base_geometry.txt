@@ -1,0 +1,90 @@
+""" Import Module """
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Regular Tests
+-------------------------
+>>> bg = BaseGeometry()
+
+
+
+
+
+Failure Tests
+--------------------------
+""" Arg Test """
+>>> bg = BaseGeometry("42")
+Traceback (most recent call last):
+	...
+TypeError: object() takes no parameters
+
+______ TypeErrors _____
+""" String """
+>>> try:
+...    bg.integer_validator("name", "John")
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+""" Tuple """
+>>> try:
+...    bg.integer_validator("name", (43, 44))
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+""" List """
+>>> try:
+...    bg.integer_validator("name", [43, 44])
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+""" Set """
+>>> try:
+...    bg.integer_validator("name", {'4', '3'})
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+""" Dict """
+>>> try:
+...    bg.integer_validator("name", {'key':'value'})
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+""" None """
+>>> try:
+...    bg.integer_validator("name", None)
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+""" Bool """
+>>> try:
+...    bg.integer_validator("name", True)
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+""" Empty """
+>>> try:
+...    bg.integer_validator("name", )
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] integer_validator() missing 1 required positional argument: 'value'
+
+""" < 0 """
+>>> try:
+...    bg.integer_validator("name", -7)
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[ValueError] name must be greater than 0
+
+""" 0 """
+>>> try:
+...    bg.integer_validator("name", 0)
+... except Exception as e:
+...    print("[{}] {}".format(e.__class__.__name__, e))
+[ValueError] name must be greater than 0
+
