@@ -69,6 +69,8 @@ Traceback (most recent call last):
 	...
 TypeError: size must be an integer
 
+>>> my_square = Square(True)
+
 Setter Tests
 -----------------------------------------------------------
 >>> my_square = (2, 3)
