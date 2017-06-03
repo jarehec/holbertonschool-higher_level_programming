@@ -33,6 +33,11 @@ Regular Tests
 >>> my_list.print_sorted()
 [-3, 0, 1, 2, 3, 4]
 
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+
 
 Failure Tests
 ---------------------------
