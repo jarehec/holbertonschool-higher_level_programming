@@ -9,7 +9,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = db.cursor()
     cur.execute("SELECT states.id, states.name FROM states \
-                 WHERE states.name = '{}' \
+                 WHERE BINary states.name = '{}' \
                  ORDER BY states.id ASC".format(sys.argv[4]))
     data = cur.fetchall()
     for state in data:
