@@ -13,6 +13,6 @@ if __name__ == '__main__':
         Session = sessionmaker(bind=engine)
         conn = Session()
         for state in conn.query(State).order_by(State.id).filter
-        (State.name.contains_('a')).all():
+        (State.name.in_(['a'])).all():
             print("{}: {}".format(state.id, state.name))
         conn.close()
