@@ -12,9 +12,9 @@ if __name__ == '__main__':
         Base.metadata.create_all(engine)
         Session = sessionmaker(bind=engine)
         conn = Session()
-        try:
-            state = conn.query(State).order_by(State.id).first()
-            print("{}: {}".format(state.id, state.name))
-        except:
+        state = conn.query(State).order_by(State.id).first()
+        if state is None:
             print("Nothing")
+        else:
+            print("{}: {}".format(state.id, state.name))
         conn.close()
