@@ -3,6 +3,7 @@
 from requests import get
 import sys
 
-url = sys.argv[1]
-response = get(url).headers
-print("{}".format(response.get('X-Request-Id')))
+if __name__ == "__main__":
+    url = sys.argv[1]
+    response = get(url).headers
+    print("{}".format(response.get('X-Request-Id')))
