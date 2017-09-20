@@ -24,7 +24,21 @@ Description
 
 
 ## File Descriptions
-TODO
+* 0-body_size.sh
+	* displays the content length in bytes
+* 100-status_code.sh
+	* displays the status code of the server's response
+* 1-body.sh
+	* displays the body of the response
+* 2-delete.sh
+	* sends a delete request
+* 3-methods.sh
+	* displays the allowed methods the server will accept
+* 4-header.sh
+	* sends a header variable with value 98 to the server
+* 5-post_params.sh 
+	* sends a header variable with value 98 to the server
+
 
 ## Authors
 Jared Heck
