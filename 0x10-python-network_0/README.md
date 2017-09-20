@@ -26,8 +26,6 @@ Description
 ## File Descriptions
 * 0-body_size.sh
 	* displays the content length in bytes
-* 100-status_code.sh
-	* displays the status code of the server's response
 * 1-body.sh
 	* displays the body of the response
 * 2-delete.sh
@@ -38,6 +36,8 @@ Description
 	* sends a header variable with value 98 to the server
 * 5-post_params.sh 
 	* sends a header variable with value 98 to the server
+* 100-status_code.sh
+	* displays the status code of the server's response
 
 
 ## Authors
