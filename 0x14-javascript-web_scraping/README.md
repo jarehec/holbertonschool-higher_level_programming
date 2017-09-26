@@ -1,4 +1,4 @@
-#  Holberton School - 0x12. Javascript - Warm up
+#  Holberton School - 0x14. Javascript - Web scraping
 
 The focus of this project is to learn:
 * How to manipulate JSON data
