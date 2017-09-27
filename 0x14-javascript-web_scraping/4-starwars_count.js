@@ -10,7 +10,7 @@ let options = {
   }
 };
 function callback (error, response, body) {
-  if (!error && response.statusCode === 200) {
+  if (error) { console.log(error); } else {
     let res = (JSON.parse(body));
     for (let item in res['results']) {
       if (res['results'][item]['characters'].indexOf(searchEle) !== -1) {
