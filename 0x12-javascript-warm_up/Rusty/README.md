@@ -1,12 +1,11 @@
 #  Holberton School - 0x12. Rust - Warm up
 
-The focus of this project is to learn:
 ## Environment
 * Ubuntu 14.04 LTS
 
 
 ## File Descriptions
-* 0-rust_is_amazing.rs
+* 0-rust_is_awesome.rs
 	* prints a message
 
 * 1-multi_languages.rs

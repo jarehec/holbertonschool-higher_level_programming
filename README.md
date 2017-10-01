@@ -1,4 +1,4 @@
-# Higher-level programming - Python
+# Higher-level programming
 Holberton School
 * Python
 * Javascript
