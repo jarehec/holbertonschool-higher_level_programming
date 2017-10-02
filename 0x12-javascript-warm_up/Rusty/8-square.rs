@@ -5,7 +5,7 @@ fn main() {
 	let args: Vec<String> = env::args().collect();
 
 	if args.len() > 1 {
-		let x: usize = match args[1].parse() {
+		let x: isize = match args[1].parse() {
 			Ok(n) => n,
 			Err(_) => { println!("Missing number of occurrences"); 0 },
 		};

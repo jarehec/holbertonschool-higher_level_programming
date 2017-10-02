@@ -4,7 +4,7 @@ use std::env;
 fn main() {
 	let args: Vec<String> = env::args().collect();
 
-	if (args.len() - 1) > 1 {
+	if args.len() > 2 {
 		println!("{} is {}", args[1], args[2]);
 	}
 }

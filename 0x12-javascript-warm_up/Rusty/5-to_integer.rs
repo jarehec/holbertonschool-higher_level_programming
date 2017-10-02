@@ -6,7 +6,7 @@ fn main() {
 
 	print!("My number: ");
 	if args.len() > 1 {
-		match args[1].parse::<usize>() {
+		match args[1].parse::<isize>() {
 			Ok(n) => { println!("{}", args[1]); n },
 			Err(_) => { println!(""); 0 },
 		};
